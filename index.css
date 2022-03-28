@@ -189,12 +189,12 @@ hr {
   }
   .container h3 {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 20%;
     transform: translate(-50px, -50px);
     text-align: center;
     /* color: transparent; */
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     padding-left: 40px;
     /* -webkit-text-stroke:0.3vw rgb(129, 59, 59);
@@ -202,7 +202,7 @@ hr {
   }
   .container p {
     position: absolute;
-    top: 26%;
+    top: 50%;
     left: 10%;
     transform: translate(-50px, -50px);
     text-align: center;
