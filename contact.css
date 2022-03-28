@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "popins", sans-serif;
+}
+.wrapper {
+  background-color: rgba(27, 5, 5, 0.7);
+  padding-bottom: 20px;
+}
+nav h2 {
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: rgb(204, 204, 98);
+}
+.sidebar {
+  position: fixed;
+  background-color: rgb(143, 77, 77);
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.sidebar img {
+  height: 100px;
+  width: 40%;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 20px;
+}
+.sidebar ul li {
+  margin: 25px 0;
+}
+hr {
+  color: black;
+}
+.sidebar ul li a {
+  color: aliceblue;
+  padding: 0 30px;
+  font-size: 25px;
+}
+.sidebar ul li a:hover {
+  color: bisque;
+  margin-left: 20px;
+  transform: 0.4s ease;
+}
+.hamburger div {
+  margin: 3px;
+  width: 25px;
+  height: 4px;
+  background-color: rgb(255, 254, 254);
+}
+.hamburger {
+  margin-left: 300px;
+}
+.close {
+  width: 25px;
+  margin-left: 300px;
+  background-color: aliceblue;
+}
+.container {
+  position: absolute;
+  padding-bottom: 402px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    rgba(83, 2, 2, 0.5),
+    rgba(10, 7, 1, 0.452)
+  );
+}
+
+.elements div {
+  position: absolute;
+  height: 60px;
+  background: transparent;
+  border: 6px solid black;
+  width: 60px;
+}
+.elements div:nth-child(1) {
+  top: 11%;
+  left: 71%;
+  animation: animate 10s linear infinite;
+}
+.elements div:nth-child(2) {
+  top: 31%;
+  left: 61%;
+  animation: animate 10s linear infinite;
+}
+.elements div:nth-child(3) {
+  top: 50%;
+  left: 20%;
+  animation: animate 7s linear infinite;
+}
+.elements div:nth-child(4) {
+  top: 72%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.elements div:nth-child(5) {
+  top: 50%;
+  left: 46%;
+  animation: animate 3s linear infinite;
+}
+.a-text h1 {
+  padding-top: 90px;
+  padding-left: 60px;
+  color: orangered;
+  font-size: 25px;
+}
+.a-text form {
+  width: 70%;
+  margin-left: 50px;
+  padding: 30px;
+}
+.a-text form input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+.exput input{
+    height: 80px;
+}
+form button{
+    width: 60%;
+    margin-left: 10px;
+    height: 30px;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translate(-90px) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.3) translate(-90px) rotate(-180deg);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 765px) {
+  .sidebar {
+    width: 200px;
+    transform: translateX(-768px);
+    transition: 0.5s ease;
+    background: transparent rgb(160, 47, 47);
+  }
+  .sidebar ul li a {
+    font-size: 16px;
+    padding: 20px;
+  }
+  .close {
+    display: none;
+  }
+}
+
+@media (min-width: 765px) {
+  .hamburger div {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+
+  .elements div:nth-child(1) {
+    top: 11%;
+    left: 41%;
+    animation: animate 10s linear infinite;
+  }
+  .elements div:nth-child(2) {
+    top: 21%;
+    left: 71%;
+    animation: animate 10s linear infinite;
+  }
+  .elements div:nth-child(3) {
+    top: 50%;
+    left: 39%;
+    animation: animate 7s linear infinite;
+  }
+  .a-text h1 {
+    padding-top: 200px;
+    padding-left: 500px;
+    color: orangered;
+    font-size: 35px;
+  }
+  .a-text form {
+    margin-left: 450px;
+    
+  }
+  .a-text form input{
+      width: 50%;
+border-radius: 50px;
+      padding: 20px;
+      margin: 20px;
+  }
+  nav h2 {
+    margin-left: 300px;
+  }
+  .exput input{
+      height: 90px;
+
+  }
+  form button{
+    width: 20%;
+    margin-left: 30px;
+    height: 30px;
+}
+}
